@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.justsoft.admin">
+
+    <PreferenceCategory
+        android:title="General">
+
+        <com.justsoft.lockscheduler.preferences.TimePikerPreference
+            android:title="Set block time start"
+            app:defaultValue="120"
+            android:summary="2:00"
+            app:isEarlierThan="@string/pref_end_block"
+            android:key="@string/pref_start_block"/>
+
+        <com.justsoft.lockscheduler.preferences.TimePikerPreference
+            android:title="Set block time end"
+            app:defaultValue="720"
+            app:isLaterThan="@string/pref_start_block"
+            android:summary="12:00"
+            android:key="@string/pref_end_block"/>
+
+        <CheckBoxPreference
+            android:title="Enable scheduler"
+            android:defaultValue="true"
+            android:key="@string/pref_enabled"/>
+
+        <EditTextPreference
+            android:title="Password"
+            android:defaultValue="qwerty"
+            android:inputType="textPassword"
+            android:key="@string/pref_password"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

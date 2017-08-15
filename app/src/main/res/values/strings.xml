@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lock Scheduler</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!--settings strings-->
+    <string name="pref_check_delay">passw_check_delay</string>
+    <string name="pref_start_block">lock_start</string>
+    <string name="pref_end_block">lock_end</string>
+    <string name="pref_enabled">enabled</string>
+    <string name="pref_password">password</string>
+
+
+</resources>

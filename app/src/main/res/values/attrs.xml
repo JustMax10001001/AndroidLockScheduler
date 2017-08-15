@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekBarPreference">
+        <attr name="min" format="integer"/>
+        <attr name="step" format="integer"/>
+        <attr name="stateText" format="string"/>
+        <attr name="defaultValue" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="TimePikerPreference">
+        <attr name="isLaterThan" format="reference"/>
+        <attr name="isEarlierThan" format="reference"/>
+    </declare-styleable>
+</resources>
